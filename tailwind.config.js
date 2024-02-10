@@ -20,13 +20,20 @@ module.exports = {
     },
     fontFamily: {
       heading: 'Roboto',
-      body: 'Inter',
+      body: 'Figtree',
+      logo: 'Lemon Milk'
     },
     fontWeight: {
       normal: '400',
+      semibold: '600',
       bold: '700',
+      light: '300'
     }, 
-    extend: {},
+    extend: {
+      transitionProperty: {
+        'width': 'width'
+      }
+    },
   },
   plugins: [],
 }
