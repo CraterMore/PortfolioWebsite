@@ -1,4 +1,5 @@
 <IfModule mod_rewrite.c>
    RewriteEngine On
    RewriteRule ^work$ work.html [L]
+   RewriteRule ^work/wordle# work/your-wordle.html [L]
 </IfModule>

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./work.html"],
+  content: ["./index.html", "./work.html", "./work/your-wordle.html"],
   theme: {
     colors: {
       'text': '#00030f',
