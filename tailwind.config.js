@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./index.html", "./work.html"],
   theme: {
     colors: {
       'text': '#00030f',
@@ -8,6 +8,7 @@ module.exports = {
       'primary': '#b1eb9e',
       'secondary': '#7edafb',
       'accent': '#235b53',
+      'secondary-gray': "#D1E3F0",
      },
      fontSize: {
       sm: '0.750rem',
@@ -19,9 +20,9 @@ module.exports = {
       '5xl': '4.210rem',
     },
     fontFamily: {
-      heading: 'Roboto',
-      body: 'Figtree',
-      logo: 'Lemon Milk'
+      heading: ['Roboto', 'serif'],
+      body: ['Figtree', 'sans-serif'],
+      logo: ['"Josefin Sans"', 'sans-serif']
     },
     fontWeight: {
       normal: '400',
