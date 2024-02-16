@@ -1073,6 +1073,11 @@ video {
     align-items: flex-start;
   }
 
+  .md\:bg-secondary-gray {
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 227 240 / var(--tw-bg-opacity));
+  }
+
   .md\:bg-none {
     background-image: none;
   }

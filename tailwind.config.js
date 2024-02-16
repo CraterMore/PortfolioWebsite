@@ -8,7 +8,7 @@ module.exports = {
       'primary': '#b1eb9e',
       'secondary': '#7edafb',
       'accent': '#235b53',
-      'secondary-gray': "#D1E3F0",
+      'secondary-gray': '#d1e3f0',
      },
      fontSize: {
       sm: '0.750rem',
