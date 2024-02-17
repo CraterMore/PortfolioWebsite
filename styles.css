@@ -874,8 +874,12 @@ video {
   background-color: rgb(209 227 240 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/wordleScreenshot\.jpeg\'\)\] {
-  background-image: url('/images/wordleScreenshot.jpeg');
+.bg-opacity-85 {
+  --tw-bg-opacity: 0.85;
+}
+
+.bg-\[url\(\'\/\.\.\/images\/wordleScreenshot\.jpeg\'\)\] {
+  background-image: url('/../images/wordleScreenshot.jpeg');
 }
 
 .bg-gradient-to-r {
@@ -1029,10 +1033,6 @@ video {
   color: rgb(35 91 83 / var(--tw-text-opacity));
 }
 
-.bg-blend-screen {
-  background-blend-mode: screen;
-}
-
 .drop-shadow-xl {
   --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1154,16 +1154,16 @@ video {
     align-items: flex-start;
   }
 
+  .md\:bg-opacity-100 {
+    --tw-bg-opacity: 1;
+  }
+  
   .md\:bg-none {
     background-image: none;
   }
 
   .md\:text-left {
     text-align: left;
-  }
-
-  .md\:bg-blend-normal {
-    background-blend-mode: normal;
   }
 
   .group:hover .md\:group-hover\:saturate-150 {
