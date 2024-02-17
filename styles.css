@@ -878,8 +878,8 @@ video {
   --tw-bg-opacity: 0.85;
 }
 
-.bg-\[url\(\'\/images\/wordleScreenshot\.jpeg\'\)\] {
-  background-image: url('/images/wordleScreenshot.jpeg');
+.bg-\[url\(\'\/\.\.\/images\/wordleScreenshot\.jpeg\'\)\] {
+  background-image: url('/../images/wordleScreenshot.jpeg');
 }
 
 .bg-gradient-to-r {
