@@ -1157,7 +1157,7 @@ video {
   .md\:bg-opacity-100 {
     --tw-bg-opacity: 1;
   }
-
+  
   .md\:bg-none {
     background-image: none;
   }
