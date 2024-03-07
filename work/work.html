@@ -11,12 +11,12 @@
     <link href="../styles.css" rel="stylesheet">
 </head>
 <body class="bg-background max-w-screen-xl mx-auto">
-    <header class="h-16 flex items-center justify-between px-4">
+    <header class="h-16 flex items-center justify-between px-4 w-full fixed bg-background z-10">
         <a class="flex flex-row items-center gap-2" href="/">
             <img class="h-12 w-12" src="../images/avatar_large.png">
             <p class="font-logo pt-1">CARTER MOORE</p>
         </a>
-        <ul class="flex flex-row gap-12 translate-y-1">
+        <ul class="flex flex-row gap-12 md:translate-y-1">
             <li class="group">
                 <a class="font-heading transition-colors ease-in-out duration-300 group-hover:text-accent" href="/work">Work
                 </a>
@@ -24,37 +24,57 @@
                 
             </li>
             <li class="group">
-                <a class="font-heading transition-colors ease-in-out duration-300 group-hover:text-accent" href="/work.html">About</a>
+                <a class="font-heading transition-colors ease-in-out duration-300 group-hover:text-accent" href="/about">About</a>
                 <div class="w-0 h-[2px] bg-accent transition-width ease-in-out duration-300 group-hover:w-full"></div>
             </li>
         </ul>
     </header>
+    <div class="h-16 w-full bg-background"></div>
     <!-- Heading -->
     <div class="flex flex-col items-center gap-3">
         <h1 class="font-heading font-bold text-4xl text-center leading-tight mt-4 px-4">
             Explore My Work</h1>
         <p class="md:max-w-lg text-xl text-center px-4">From freelance work to academic and personal
             projects, see some of my most recent work below.</p>
-        <a class="btn-primary p-[6px] h-fit mb-5 mt-4 animate-bounce" href="/work.html">
+        <a class="btn-primary p-[6px] h-fit mb-5 mt-4 animate-bounce">
             <img class="size-[2rem] rotate-180" src="../images/arrow-small-up.png">
         </a>
     </div>
     <div class="w-full h-2 bg-accent"></div>
     <!-- Project Gallery -->
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-14 p-10">
-        <a class="group md:block bg-secondary-gray bg-center md:bg-none bg-cover bg-[url('/../images/wordleScreenshot.jpeg')] rounded-3xl overflow-clip border-4 border-text transition-shadow ease-linear hover:shadow-2xl duration-200" href="/work/your-wordle.html">
+        <a class="group md:block bg-primary-gray bg-center md:bg-none bg-cover bg-[url('/../images/wordleScreenshot.jpeg')] rounded-3xl overflow-clip border-4 border-text transition-shadow ease-linear hover:shadow-2xl duration-200" href="/work/your-wordle.html">
             <img src="../images/wordleScreenshot.jpeg" class="hidden md:block h-48 w-full object-cover md:group-hover:saturate-150">
+            <div class="flex flex-col px-3 py-3 gap-4 md:bg-opacity-100 bg-primary-gray bg-opacity-85">
+                <div class="bg-primary rounded-lg border-2 border-r-text text-md font-bold font-heading w-fit px-2">
+                    Programming
+                </div>
+                <h2 class="font-heading font-bold text-2xl text-left leading-tight">
+                    Your Wordle Web App</h2>
+                <p class="text-lg text-left -translate-y-2">My first web app project that lets you play Wordle with a twist. Included database management, API calls, routing, and users.</p>
+            </div>
+        </a> 
+        <a class="group md:block bg-secondary-gray bg-center md:bg-none bg-cover bg-[url('/../images/Lifesource-Cover.png')] rounded-3xl overflow-clip border-4 border-text transition-shadow ease-linear hover:shadow-2xl duration-200" href="/work/therapeutic-innovations.html">
+            <img src="../images/Lifesource-Cover.png" class="hidden md:block h-48 w-full object-cover md:group-hover:saturate-150">
             <div class="flex flex-col px-3 py-3 gap-4 md:bg-opacity-100 bg-secondary-gray bg-opacity-85">
                 <div class="bg-secondary rounded-lg border-2 border-r-text text-md font-bold font-heading w-fit px-2">
                     Graphic Design
                 </div>
                 <h2 class="font-heading font-bold text-2xl text-left leading-tight">
-                    Your Wordle Web App</h2>
-                <p class="text-lg text-left -translate-y-2">From freelance work to academic and personal
-                    projects, see some of my most recent work below.</p>
+                    Therapeutic Innovations Rebranding</h2>
+                <p class="text-lg text-left -translate-y-2">Developing a comprehensive brand identity for a medical device start-up.</p>
             </div>
         </a> 
-    
+    </div>
+    <div class="flex justify-center items-center gap-4 px-4">
+        <a class="btn-primary p-[6px] m-0 h-fit transition ease-in-out duration-150 hover:-translate-y-1" href="https://dribbble.com/Crater14">
+            <img src="../images/dribbble-icon.svg" class="size-[1.8rem]">
+        </a>
+        <div>
+            <h1 class="font-heading text-xl font-bold">More graphic design work...</h1>
+            <h2 class="font-heading">See more of my art on my Dribbble page!</h2>
+        </div>
+        
     </div>
     <footer class="font-body text-center my-6">Created by Carter Moore</footer>
 </body>
