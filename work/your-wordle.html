@@ -11,12 +11,12 @@
     <link href="../styles.css" rel="stylesheet">
 </head>
 <body class="bg-background max-w-screen-xl mx-auto">
-    <header class="h-16 flex items-center justify-between px-4">
+    <header class="h-16 flex items-center justify-between px-4 w-full fixed bg-background z-10">
         <a class="flex flex-row items-center gap-2" href="/">
             <img class="h-12 w-12" src="../images/avatar_large.png">
             <p class="font-logo pt-1">CARTER MOORE</p>
         </a>
-        <ul class="flex flex-row gap-12 translate-y-1">
+        <ul class="flex flex-row gap-12 md:translate-y-1">
             <li class="group">
                 <a class="font-heading transition-colors ease-in-out duration-300 group-hover:text-accent" href="/work">Work
                 </a>
@@ -24,17 +24,18 @@
                 
             </li>
             <li class="group">
-                <a class="font-heading transition-colors ease-in-out duration-300 group-hover:text-accent" href="/work.html">About</a>
+                <a class="font-heading transition-colors ease-in-out duration-300 group-hover:text-accent" href="/about">About</a>
                 <div class="w-0 h-[2px] bg-accent transition-width ease-in-out duration-300 group-hover:w-full"></div>
             </li>
         </ul>
     </header>
+    <div class="h-16 w-full bg-background"></div>
     <!-- Heading -->
-    <div class="flex flex-col items-center gap-3">
-        <p class="md:max-w-lg text-lg italic text-center px-4">Personal Project</p>
-        <h1 class="font-heading font-bold text-4xl text-center leading-tight px-4">
+    <div class="flex flex-col items-center">
+        <p class="md:max-w-lg text-lg italic text-center px-4 mb-3">Personal Project</p>
+        <h1 class="font-heading font-bold text-4xl text-center leading-tight px-4 mb-1">
             Your Wordle Web App</h1>
-        <p class="md:max-w-lg text-xl text-center px-4 font-light mb-5">February 2024</p>
+        <p class="md:max-w-lg text-xl text-center px-4 font-light mb-5">Summer 2023</p>
     </div>
     <div class="w-full h-2 bg-accent"></div>
     <!-- Project Article -->
@@ -45,10 +46,52 @@
                 <img src="../images/github.png" class="size-[1.8rem]">
             </a>
         </div>
-        <p class="font-body indent-4 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <div class="rounded-2xl w-fit h-80 md:h-[70svh] overflow-clip">
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            During COVID, it seemed like everybody's daily routine involved the mastermind-like word game Wordle. My whole family played the game and sent their
+            scores everyday to each other which gave my grandfather an idea. He talked about a version of Wordle where the players can choose a day in
+            the near future, and a 5-letter word, and everyone who plays Wordle on that day will be trying to guess that word. That's exactly what this game is!
+            Players login, see who wrote the word of the day, play Wordle, and have the option to view their statistics and send their score. 
+        </p>
+        <div class="rounded-2xl w-fit max-h-72 md:max-h-[65svh] overflow-clip">
             <img src="../images/wordleScreenshot.jpeg" class="object-cover object-center">
         </div>
+        <figcaption class="italic text-center font-light">
+            Screenshot of the main page where users play the game
+        </figcaption>
+        <h2 class="text-left font-heading font-bold text-2xl">The Details</h2>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            The project is run on Replit - an all-in-one IDE, hosting platform, and database provider - and uses Node.js and Express for the backend. For my first web project ever, Replit was
+            a fantastic tool that allowed me to spend less time installing and managing packages, and more time implementing the project. I started with a Wordle game template from <a href="https://github.com/WebDevSimplified/wordle-clone" class="text-accent underline hover:text-primary">WebDevSimplified</a>
+            that offered a basic interface, a JSON file of all 5-letter words in the dictionary, and the core functionality of typing in guesses and revealing the different colors associated with each
+            letter. From this foundation, I added user authentication and saving user data, a page dedicated to word submission, a score sharing feature, a maintenance mode, and fixed some gameplay bugs and reconfigured code that was part of the template.
+        </p>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            Player login is faciliated using Auth0 by Okta as a third party authentication tool and then translated into sessions by Passport (a Node.js middleware) and Express Sessions. User data is stored using
+            Replit Database which provides its own methods for updating the key-value data. The word submission page is just a simple HTML form that makes a call to the server to verify the validity of the request
+            before updating a server-side JSON file that holds data related to word submissions. HTTPS API calls are used for all communication between the client and server, but is also used to make an HTTPS request to the New York Times'
+            Wordle API. That way, if no one has submitted a word for that day, the regular NYT Wordle word will be supplemented to the player. 
+        </p>
+        <h2 class="text-left font-heading font-bold text-2xl">My Experience</h2>
+        <div class="rounded-2xl w-fit max-h-72 md:max-h-[70svh] overflow-clip">
+            <img src="../images/wordle-score-mockup.png" class="object-cover object-center">
+        </div>
+        <figcaption class="italic text-center font-light">
+            Users sharing their score for the day
+        </figcaption>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            This being my first ever web project, I encountered plenty of hurdles in the process. One of the biggest challenges came from managing player data; the state of the game and how that data was displayed varied
+            depending on how the player had last left the site. This required having a dynamic system that could start a new game, load that day's game progress, or show your statistics alongside the score you got earlier that day.
+            Another challenge that I had to overcome was making the web app usable for all types of devices. It was always easy to test the game on my computer, but mobile devices proved harder to test and develop for. Without any kind
+            of CSS libraries or frameworks, it took a lot of fine tuning to make sure the application looked good and functioned on all devices.
+        </p>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            Looking back, there are countless things I would change (and add) to this project. I was learning how to develop a web app as I built this project and the organization and structure of the project is a reflection of that.
+            I constantly found myself using a simple method of implementation for a feature (like a JSON file for player data), and then upgrading that infrastructure later down the line (moving JSON file data to Replit Database). As the scope of the 
+            project grew, I constantly found myself struggling to integrate new mechanics with outdated code that held up the project. 
+            If I were to rebuild the project, I would probably switch to a framework like React that is more suited for dynamic, interactive projects. I would also spend more time planning out the supporting infrastructure like API calls, the database model,
+            and basic player functions.
+        </p>
+        <p class="text-accent my-4 text-center">Database Management · Web App Security · User Authentication · Routing</p>
     </container>
     <footer class="font-body text-center my-6">Created by Carter Moore</footer>
 </body>
