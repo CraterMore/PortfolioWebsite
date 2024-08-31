@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital React Web App</title>
+    <link href="../images/avatar_large.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;family=Josefin+Sans:ital,wght@0,100..700;1,100..700&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body class="bg-background max-w-screen-xl mx-auto">
+    <header class="h-16 flex items-center justify-between px-4 w-full max-w-screen-xl fixed bg-background z-10">
+        <a class="flex flex-row items-center gap-2" href="/">
+            <img class="h-12 w-12" src="../images/avatar_large.png">
+            <p class="font-logo pt-1">CARTER MOORE</p>
+        </a>
+        <ul class="flex flex-row gap-12 md:translate-y-1">
+            <li class="group">
+                <a class="font-heading transition-colors ease-in-out duration-300 group-hover:text-accent" href="/work">Work
+                </a>
+                <div class="w-0 h-[2px] bg-accent transition-width ease-in-out duration-300 group-hover:w-full"></div>
+                
+            </li>
+            <li class="group">
+                <a class="font-heading transition-colors ease-in-out duration-300 group-hover:text-accent" href="/about">About</a>
+                <div class="w-0 h-[2px] bg-accent transition-width ease-in-out duration-300 group-hover:w-full"></div>
+            </li>
+        </ul>
+    </header>
+    <div class="h-16 w-full bg-background"></div>
+    <!-- Heading -->
+    <div class="flex flex-col items-center">
+        <p class="md:max-w-lg text-lg italic text-center px-4 mb-3">School Project</p>
+        <h1 class="font-heading font-bold text-4xl text-center leading-tight px-4 mb-1">
+            Hospital React Web App</h1>
+        <p class="md:max-w-lg text-xl text-center px-4 font-light mb-5">Spring 2024</p>
+    </div>
+    <div class="w-full h-2 bg-accent"></div>
+    <!-- Project Article -->
+    <container class="flex flex-col max-w-3xl mx-auto my-5 px-5 gap-5">
+        <!-- <div class="flex gap-2 justify-center">
+            <a class="btn-primary transition ease-in-out duration-150 hover:-translate-y-1" href="https://wordle-family-cartermoore4.replit.app/demo">Try it out!</a>
+            <a class="btn-primary p-[6px] m-0 h-fit transition ease-in-out duration-150 hover:-translate-y-1" href="https://github.com/CraterMore/super-wordle">
+                <img src="../images/github.png" class="size-[1.8rem]">
+            </a>
+        </div> -->
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            During the last quarter of my sophomore year at WPI, I completed a course named Software Engineering. The course was designed to teach students the basics of software development through a comprehensive team project. 
+            I served as Lead Software Engineer on an 11-person team to apply Agile development methodologies and software design patterns in the creation of a web application prototype running on the cloud for Brigham and Women's Hospital.
+            The final software application prototype included hospital pathfinding, a map editor, multiple integrated service request modules, a personal taskboard, and a hospital inventory system.
+        </p>
+        <div class="rounded-2xl w-fit max-h-72 md:max-h-[65svh] overflow-clip">
+            <img src="../images/soft-eng/hero-page.png" class="object-cover object-center">
+        </div>
+        <figcaption class="italic text-center font-light">
+            Application landing page
+        </figcaption>
+        <h2 class="text-left font-heading font-bold text-2xl">The Details</h2>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            The web application was developed using React.js, Typescript, TailwindCSS, Material UI, Express, Prisma ORM, and PostgreSQL. Deployment on the cloud was accomplished using AWS EC, a Docker container, and AWS RDS to run the PostgreSQL server.
+            This tech stack is the only piece of the project that was provided to our team at the start. From there, our team set out conducting user research, developing a prototype, and organizing our 7 weeks into week-long development sprints. 
+        </p>
+        <div class="rounded-2xl w-fit max-h-72 md:max-h-[65svh] overflow-clip">
+            <img src="../images/soft-eng/pathfinding.png" class="object-cover object-center">
+        </div>
+        <figcaption class="italic text-center font-light">
+            Navigation page providing directions within the hospital
+        </figcaption>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            The application includes many different core features including a hospital pathfinding system, a map editor, and multiple integrated service request modules. Additionally, our project's differentiating features were designed with interconnectivity and user experience in mind. A taskboard system provides each staff member their own
+            personal to-do list with the ability to automatically create to-do items in your list when a service request is assigned to you. A hopsital inventory system allows staff to manage what items the hospital has in storage
+            and reference that inventory when creating service requests.
+        </p>
+        <div class="rounded-2xl w-fit max-h-72 md:max-h-[65svh] overflow-clip">
+            <img src="../images/soft-eng/request-page.png" class="object-cover object-center">
+        </div>
+        <figcaption class="italic text-center font-light">
+            Service request page for creating and viewing requests
+        </figcaption>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            As the technical leader of the frontend group, I worked on features such as the personal task board, "drag-and-drop" node editing in the map editor, login with Auth0 authorization, and permission-based site access/routing. 
+            The layout and design of the application were implemented using TailwindCSS and Material UI with the goal of achieving a consistent style and ease of use. In order to do so, we created a style guide and mockups using Figma, as well as a component folder to store themed reusable components.
+            The creation of use case diagrams and feedback from our peers also helped inform the core UX decisions we made throughout the project.
+        </p>
+        <div class="rounded-2xl w-fit max-h-72 md:max-h-[65svh] overflow-clip">
+            <img src="../images/soft-eng/task-board.png" class="object-cover object-center">
+        </div>
+        <figcaption class="italic text-center font-light">
+            Personal to-do list for hospital staff
+        </figcaption>
+        <h2 class="text-left font-heading font-bold text-2xl">Organizing as a Team</h2>
+        <div class="rounded-2xl w-fit max-h-72 md:max-h-[70svh] overflow-clip">
+            <img src="../images/soft-eng/map-editing.png" class="object-cover object-center">
+        </div>
+        <figcaption class="italic text-center font-light">
+            Map editing page for hospital staff
+        </figcaption>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            As the Lead Software Engineer on the project, I was responsible for critical development decisions, the organization of the codebase, and the implementation of the core features. I also spent a significant amount of effort 
+            making sure that everyone on the team felt valued, and that everyone had a chance to make a meaningful contribution. I held "office hours" for my teammates, reviewed pull requests, and led development meetings. As the frontend lead - 
+            making sure that the UI was consistent and that the user experience was intuitive through features like "drag-and-drop" node editing on the map editor page and enforcing a consistent color scheme and design language. Having already taken courses in database systems,
+            algorithms, and program design, this project served as a great opportunity to apply my knowledge in a real-world setting while exposing myself to new tools like React, and Prisma.
+        </p>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            Each member of our team contributed code to multiple features and worked on a variety of tasks. Using the agile methodology, we conducted week-long sprints with user story planning, daily standups, and sprint retrospectives. We used Taiga.io to manage our user stories and issues, and GitHub to manage our codebase.
+            Our primary form of communication was through Discord where we shared announcements, and used subchannels for each of our development groups to discuss problems and bugs.
+        </p>
+        <h2 class="text-left font-heading font-bold text-2xl">Takeaways</h2>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            One of the most challenging aspects of the project was staying organized and on track as a team. 
+            It was easy to fall into a pattern of working on your own tasks and not communicating with the rest of the team - this made it hard to integrate everyone's work and divy up tasks effectively.
+            There were also times where there was uncertainty or miscommunication between team members about what each of them were responsible for working on and when.
+            To overcome this, I found it was important to be proactive in asking for and providing help, and making sure that everyone is on the same page regarding their tasks and responsibilites.
+            This is something that is only achieved with effective and empathetic communication - which is a skill I employed and developed even further as the project progressed.
+        </p>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            Overall, I am very proud of what my team and I accomplished in such a short amount of time. Our application is a fully functional prototype that could be used in a hospital setting with a very interconnected set of features and intuitive user experience.
+            This project was enormously helpful in expanding my knowledge of web development and leadership skills. Working with such a large group of people with such short deadlines underlined how crucial it is to listen and communicate effectively. I grew my confidence in managing and
+            supporting my groupmates - making sure to strike a balance between being a leader and a team player. I also became much more comfortable with the React framework, and web development in general. The class has allowed me to apply these skills to my work and personal projects at
+            a rate and level of understanding that I did not previously have.
+        </p>
+        <p class="font-body indent-4 md:text-[1.1rem]">
+            If I could change one thing about the journey of this team and our project, I would have liked to make better use of the tools we had for organizing and communicating. Our slow adoption of Taiga.io and the gaps in our communication were a source of frustration for many of us and often
+            resulted in panic and worry as deadlines approached. Part of the issue is that tools like Taiga.io were typically an after-thought and not a primary focus in the flow of our development. Had we been more frequent in our use of these tools and more proactive in our communication, I believe our entire
+            team could have achieved even more and reduced the stress that came with the project.
+        </p>
+        <p class="text-accent my-4 text-center">React Web Development · Agile Methodology · Design Patterns · UI and UX</p>
+    </container>
+    <footer class="font-body text-center my-6">Created by Carter Moore</footer>
+</body>
+</html>
