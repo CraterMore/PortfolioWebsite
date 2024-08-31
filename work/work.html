@@ -11,7 +11,7 @@
     <link href="../styles.css" rel="stylesheet">
 </head>
 <body class="bg-background max-w-screen-xl mx-auto">
-    <header class="h-16 flex items-center justify-between px-4 w-full fixed bg-background z-10">
+    <header class="h-16 flex items-center justify-between px-4 w-full max-w-screen-xl fixed bg-background z-10">
         <a class="flex flex-row items-center gap-2" href="/">
             <img class="h-12 w-12" src="../images/avatar_large.png">
             <p class="font-logo pt-1">CARTER MOORE</p>
@@ -43,6 +43,17 @@
     <div class="w-full h-2 bg-accent"></div>
     <!-- Project Gallery -->
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-14 p-10">
+        <a class="group md:block bg-secondary-gray bg-center md:bg-none bg-cover bg-[url('/../images/soft-eng/hero-page-cropped.png')] rounded-3xl overflow-clip border-4 border-text transition-shadow ease-linear hover:shadow-2xl duration-200" href="/work/hospital-app.html">
+            <img src="../images/soft-eng/hero-page-cropped.png" class="hidden md:block h-48 w-full object-cover md:group-hover:saturate-150">
+            <div class="flex flex-col px-3 py-3 gap-4 md:bg-opacity-100 bg-primary-gray bg-opacity-85">
+                <div class="bg-primary rounded-lg border-2 border-r-text text-md font-bold font-heading w-fit px-2">
+                    Programming
+                </div>
+                <h2 class="font-heading font-bold text-2xl text-left leading-tight">
+                    React Web App for Hospital</h2>
+                <p class="text-lg text-left -translate-y-2">A React-Typescript web app developed in CS3733 Software Engineering over 7 weeks.</p>
+            </div>
+        </a> 
         <a class="group md:block bg-primary-gray bg-center md:bg-none bg-cover bg-[url('/../images/wordleScreenshot.jpeg')] rounded-3xl overflow-clip border-4 border-text transition-shadow ease-linear hover:shadow-2xl duration-200" href="/work/your-wordle.html">
             <img src="../images/wordleScreenshot.jpeg" class="hidden md:block h-48 w-full object-cover md:group-hover:saturate-150">
             <div class="flex flex-col px-3 py-3 gap-4 md:bg-opacity-100 bg-primary-gray bg-opacity-85">
